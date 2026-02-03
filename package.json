@@ -1,0 +1,21 @@
+{
+    "name": "riskwall-revamp",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "dotnet:api": "dotnet run --project RiskWall/src/RiskWall.API/RiskWall.API.csproj",
+        "dotnet:worker": "dotnet run --project RiskWall/src/RiskWall.Worker/RiskWall.Worker.csproj",
+        "dev:all": "turbo dev & npm run dotnet:api & npm run dotnet:worker"
+    },
+    "devDependencies": {
+        "turbo": "^2.8.0"
+    },
+    "packageManager": "npm@10.8.2"
+}

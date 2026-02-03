@@ -1,0 +1,339 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Nuvama Design System - Extracted from Figma */
+
+  /* Typography */
+  --font-family: 'DM Sans', sans-serif;
+  --font-size: 14px;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+
+  /* Line Heights */
+  --leading-tight: 120%;
+  --leading-normal: 140%;
+
+  /* Primary Colors */
+  --primary: #6374D4;
+  --primary-foreground: #FFFFFF;
+  --primary-light: #E1E0F8;
+  --primary-border: #D1D1F7;
+
+  /* Destructive/Accent */
+  --destructive: #F04E45;
+  --destructive-foreground: #FFFFFF;
+
+  /* Success */
+  --success: #10B981;
+  --success-foreground: #FFFFFF;
+
+  /* Background Colors */
+  --background: #FFFFFF;
+  --foreground: #292663;
+  --background-secondary: #F2F2F5;
+  --background-tertiary: #F5F7FF;
+  --background-muted: #E5E5EB;
+
+  /* Text Colors */
+  --text-primary: #292663;
+  --text-secondary: #696682;
+  --text-tertiary: #828096;
+  --text-quaternary: #727271;
+  --text-dark: #444444;
+  --text-darkest: #03002F;
+
+  /* Border Colors */
+  --border: #CCCCD6;
+  --border-light: #E7E7E7;
+  --border-lighter: #E3E3E3;
+  --border-muted: #E5E5EB;
+  --border-focus: #6374D4;
+
+  /* Input Colors */
+  --input: #CCCCD6;
+  --input-background: #FFFFFF;
+
+  /* Card Colors */
+  --card: #FFFFFF;
+  --card-foreground: #292663;
+
+  /* Popover Colors */
+  --popover: #FFFFFF;
+  --popover-foreground: #292663;
+
+  /* Secondary Colors */
+  --secondary: #828096;
+  --secondary-foreground: #FFFFFF;
+
+  /* Muted Colors */
+  --muted: #ECECF0;
+  --muted-foreground: #828096;
+
+  /* Accent Colors */
+  --accent: #6374D4;
+  --accent-foreground: #FFFFFF;
+
+  /* Ring/Focus */
+  --ring: #6374D4;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-md: 6px;
+  --radius-lg: 14px;
+  --radius-xl: 100px;
+
+  /* Spacing */
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 8px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #292663;
+  --sidebar-primary: #6374D4;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F5F7;
+  --sidebar-accent-foreground: #292663;
+  --sidebar-border: #CCCCD6;
+  --sidebar-ring: #6374D4;
+
+  /* Chart Colors */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+
+  /* Switch */
+  --switch-background: #cbced4;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+}
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-background-muted: var(--background-muted);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-border-lighter: var(--border-lighter);
+  --color-border-muted: var(--border-muted);
+  --color-border-focus: var(--border-focus);
+
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+
+  --color-ring: var(--ring);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-quaternary: var(--text-quaternary);
+  --color-text-dark: var(--text-dark);
+  --color-text-darkest: var(--text-darkest);
+
+  --color-switch-background: var(--switch-background);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Border Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  /* Spacing */
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-2xl: var(--spacing-2xl);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family);
+  }
+
+  /**
+  * Typography styles based on Nuvama Design System
+  * H3: 18px / 120%
+  * H4: 16px / 120%
+  * H5: 14px / 120%
+  * Body 2: 14px / 140%
+  * Body 3 Light: 12px / 140%
+  */
+
+  html {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-primary);
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-primary);
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-primary);
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-dark);
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 140%;
+    color: var(--text-secondary);
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-dark);
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 140%;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    line-height: 140%;
+    color: var(--text-darkest);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--text-tertiary);
+  }
+}
