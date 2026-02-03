@@ -1,0 +1,6 @@
+@RiskWall.API_HostAddress = http://localhost:5034
+
+GET {{RiskWall.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

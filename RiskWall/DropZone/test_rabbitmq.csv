@@ -1,0 +1,8 @@
+Date,Severity,Message,Details
+2023-10-27T10:00:00,Critical,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+JaiHo,Info,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+XJaiHo,Info,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+Gayatri,Warning,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+Sanket,Info,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+Ashish,Critical,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
+Pratik,Critical,Test Alert RabbitMQ,This is a test verifying RabbitMQ integration.
